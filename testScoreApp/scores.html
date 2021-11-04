@@ -4,26 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aaron McNeal's Test scores app</title>
+    <title>Aaron McNeal's Average Test scores app</title>
     <script>
-        let score1 = parseInt(prompt("Enter Test Score"));
-        let score2 = parseInt(prompt("Enter Test Score"));
-        let score3 = parseInt(prompt("Enter Test Score"));
-        let score4 = parseInt(prompt("Enter Test Score"));
-        let total = score1 + score2 + score3 + score4;
-        let today = new Date();
-
-        //Calculate Average
+        let scores = [];
+        let total = 0;
+        let highestScore = 0;       
         let average = total/4;
+        let entry;
+        let today = new Date();
+        let show = "The test scores are:\n" 
+
+        do {
+            entry = prompt("Enter a test score\n" + "Or enter 999 to end entries", 999);
+            entry = parseInt(entry);
+            if (entry >= 0 && entry <= 100) {
+               scores[scores.length] = entry;
+            } else if (entry != 999) {
+                alert("Entry must be a valid test score between 0 through 100\n" + "Or enter 999 to end entries.")
+            }
+        }
+        while(entry != 999);
+
+        if (scores.length != 0){
+            for (var i = 0;i < scores.length;i++){
+                total = total + scores[i];
+                show = show + scores[i] + "\n";
+            }
+            for (var i = 0; i < scores.length; i++){
+            if(highestScore < scores[i]){
+                highestScore = scores[i];
+            }
+        }
+        }
+
+        average = parseInt(total/scores.length);
+        //for (var i = 0; i < scores.length; i++){
+       //     if(highestScore < scores[i]){
+       //         highestScore = scores[i];
+        //    }
+       // }
+        alert("\nThe average score: " + average + "\n"
+        + "Highest score: " + highestScore);
+
+
     </script>
 </head>
 <body>
-    <script>
-        alert("Score 1: " + score1 + "\n" + "Score 2: " + score2 + 
-        "\n" + "Score 3: " + score3 + "\n" + "Score 4: " + score4 + 
-        "\n" + "Average Score: " + average + "\n\n" 
-        + "Today's date and time is: " + today + "\n\n");
-    </script>
-    Thank you for using my application
+    <main>
+        <!--Will show after Javascript has run-->    
+        <h1>Thanks for using my application</h1>
+    </main>
 </body>
 </html>
