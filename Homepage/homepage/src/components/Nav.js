@@ -15,10 +15,10 @@ const Navigation = (props) => {
                 <NavDropdown.Item eventKey="4.4">Projects</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
-                <Nav.Link eventKey="link-1">Artist</Nav.Link>
+                <Nav.Link eventKey="link-1">Designer</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="link-2">Real Estate</Nav.Link>
+                <Nav.Link eventKey="link-2">Business</Nav.Link>
             </Nav.Item>
         </Nav>
     )
