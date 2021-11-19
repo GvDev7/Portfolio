@@ -13,9 +13,9 @@ const Homepage = (props) => {
             <h1 className="companyName">GeneVision</h1>
             <h2 className="companyName2">Development</h2>
             <div className="missionStatement">
-                <h3></h3>
+                <h3>Our mission here at GVD is to ensure our clients ideas and values are expressed through our designs and applications.</h3>
             </div>
-            <div>
+            <div className="frames">
                 <div className="firstFrame">
                     <h4>Software Engineer</h4>
                     <p></p>
@@ -24,7 +24,7 @@ const Homepage = (props) => {
                     <h4>Designer</h4>
                     <p></p>
                 </div>
-                <div className="thridFrame">
+                <div className="thirdFrame">
                     <h4>Consultant</h4>
                     <p></p>
                 </div>
