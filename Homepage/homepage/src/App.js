@@ -1,11 +1,11 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Homepage from './pages/Homepage';
+import RouterHandler from './router';
 
 function App() {
   return (
     <div className="App">
-      <Homepage/>
+      <RouterHandler/>
     </div>
   );
 }

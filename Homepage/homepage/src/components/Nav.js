@@ -2,8 +2,9 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Navigation = (props) => {
+
     return (
-        <Nav justify variant="pills" defaultActiveKey="/home">
+        <Nav justify variant="pills" defaultActiveKey="/home" id="nav">
             <Nav.Item>
                 <Nav.Link href="/home">Homepage</Nav.Link>
             </Nav.Item>
