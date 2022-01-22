@@ -1,7 +1,5 @@
 const Hero = (props) => {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-    
+ 
     const style = {
       'top': '100px', 
       'left': 0,
@@ -9,7 +7,7 @@ const Hero = (props) => {
     
     return(
       <div style={style}>
-        <img src={props.url} id={props.id}/>
+        <img src={props.url} id={props.id} alt={props.alt}/>
       </div>
     )
   }

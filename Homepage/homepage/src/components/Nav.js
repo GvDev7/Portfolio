@@ -9,7 +9,7 @@ const Navigation = (props) => {
                 <Nav.Link href="/home">Homepage</Nav.Link>
             </Nav.Item>
             <NavDropdown title="Software Eng" id="nav-dropdown">
-                <NavDropdown.Item eventKey="4.1">Planning</NavDropdown.Item>
+                <NavDropdown.Item eventKey="4.1" href="/planning">Planning</NavDropdown.Item>
                 <NavDropdown.Item eventKey="4.2">Front-End</NavDropdown.Item>
                 <NavDropdown.Item eventKey="4.3">Back-End</NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -19,7 +19,7 @@ const Navigation = (props) => {
                 <Nav.Link eventKey="link-1">Designer</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="link-2">Business</Nav.Link>
+                <Nav.Link eventKey="link-2">Consultant</Nav.Link>
             </Nav.Item>
         </Nav>
     )

@@ -1,9 +1,19 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+  overflow-x: hidden;
+}
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .bg {
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(6,117,32,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+#nav {
+  color: true rgb(0,115,207);
 }
 
 #Gene1 {
@@ -16,7 +26,7 @@
 
 .companyName {
   font-size: 55px;
-  color: #0d6efd;
+  color: #7CFC00;
   letter-spacing: 7rem;
   text-transform: uppercase;
   margin-left: 95px;
@@ -25,13 +35,13 @@
 
 .companyName2 {
   letter-spacing: 3rem;
-  color: whitesmoke;
+  color: rgb(0,115,207);
   font-size: 35px;
 }
 
 .missionStatement {
-  color: whitesmoke;
-  background-color: #0d6efd;
+  color: rgb(0,115,207);
+  background-color: #7CFC00;
   height: 200px;
   width: 500px;
   border-radius: 10px;
@@ -42,6 +52,7 @@
 
 .frames {
   margin-top: 10%;
+  font-weight: 600;
 }
 
 .frames ul {
@@ -50,16 +61,16 @@
 }
 
 .firstFrame {
-  color: whitesmoke;
-  background-color: #0d6efd;
+  color: rgb(0,115,207);
+  background-color: #7CFC00;
   height: 50%;
   width: 40%;
   border-radius: 10px;
 }
 
 .secondFrame {
-  color: whitesmoke;
-  background-color: #0d6efd;
+  color: rgb(0,115,207);
+  background-color: #7CFC00;
   float: right;
   height: 50%;
   width: 35%;
@@ -68,8 +79,8 @@
 }
 
 .thirdFrame {
-  color: whitesmoke;
-  background-color: #0d6efd;
+  color: rgb(0,115,207);
+  background-color: #7CFC00;
   height: 50%;
   width: 40%;
   margin-top: 20%;
