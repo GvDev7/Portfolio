@@ -12,6 +12,7 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    background-color: green;
 }
 
 .container {
@@ -43,7 +44,7 @@ body {
 }
 
 .panel.active {
-    flex: 5;
+    flex: 3;
 }
 
 .panel.active h3 {
