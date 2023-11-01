@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.4;
+
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: darkgreen;
+    box-shadow: 0 0 10px black;
+    justify-content: center;
+}
+
+.imgWrap {
+    align-self: center;
+    box-shadow: 0 0 9px white;
+    padding: 0px;
+    margin: 0px;
+}
+
+#Logo {
+    width: 100px;
+    height: 100px;
+}
+
+.cf::before, .cf::after {
+    content: '';
+    display: table;
+}
+
+.cf::after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+.menu {
+    list-style: none;
+    margin: 50px 10px;
+    width: fit-content;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu li {
+    background: #e7a25a;
+    float: left;
+    position: relative;
+    transform: skew(25deg);
+    margin-right: 1px;
+}
+
+.menu li:hover {
+    background: #e74c3c;
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+.menu > li > a {
+    transform: skew(-25deg);
+    padding: 1em 2em;
+}
+
+.submenu {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    transform: skewX(-25deg);
+    transform-origin: left top;
+}
+
+.submenu li {
+    background-color: #34495e;
+    position: relative;
+    overflow: hidden;
+}
+
+.submenu > li > a {
+    padding: 1em 2em;
+}
+
+.submenu > li::after {
+    content: "";
+    position: absolute;
+    top: -125%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+}
+
+.submenu > li:nth-child(odd) {
+    transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+    transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+    transform: skewX(-25deg) rotate(3deg);
+    right: -50%;
+}
+
+.submenu > li:nth-child(even) {
+    right: -3%;
+    transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+    transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+    left: -50%;
+    transform: skewX(25deg) rotate(3deg);
+}
+
+.submenu, .submenu li {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu li {
+    transition: .2s ease;
+}
+
+.menu > li:hover .submenu, .menu > li:hover .submenu li {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu > li:hover .submenu li:nth-child(even) {
+    transform: skewX(25deg) translateX(15deg);
+}
+
+.menu > li:hover .submenu li:nth-child(odd) {
+    transform: skewX(-250deg) translateX(-15deg);
+}
+
+#welcome-section {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: fantasy;
+    margin-bottom: 0px;
+    border-bottom: .5px solid white;
+}
+
+#welcome-section > p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-style: italic;
+    color: chartreuse;
+    text-align: center;
+}
+
+#projects {
+    text-align: center;
+    padding: 10rem 2rem;
+    background-color: rgb(0, 126, 0);
+}
+
+.project-header {
+    max-width: 640px;
+    margin: 0 auto 2rem auto;
+    border-bottom: 0.2rem solid white;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-grid ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.project {
+    background: rgb(36, 36, 36);
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.projectTitle {
+    font-size: 1.6rem;
+    padding: 1rem 1rem;
+}
+
+@media (max-width: 28.75em) {
+.nav {
+    justify-content: center;
+}
+
+}
