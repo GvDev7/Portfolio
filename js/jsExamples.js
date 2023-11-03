@@ -1,0 +1,1 @@
+window.alert("Welcome to GVDev's Javascript Examples Page");
