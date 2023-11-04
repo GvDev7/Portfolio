@@ -44,15 +44,19 @@
     </nav>
 
     <div class="container">
-        <header id="header">
-            <h1>Math the Fun way.</h1>
-        </header>
-        <div id="headerInputContainer">
-            <input type="text" id="searchInput">
-            <button id="searchTopicButton">Search a topic</button>
+        <div>
+            <header id="header">
+                <h1>Math the Fun way.</h1>
+            </header>
         </div>
+        <form id="headerInputContainer">
+            <input type="text" id="searchInput">
+            <input type="submit" id="searchTopicButton" value="Search a topic">
+        </form>
+        <div id="clear"></div>
+        <div id="navContainer">
         <div id="nav">
-            <ul>
+            <ul id="navItems">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Online Tutorials</a></li>
                 <li><a href="#">Get a private tutor</a></li>
@@ -60,10 +64,11 @@
                 <li><a href="#">Contact Us</a></li>
             </ul>
         </div>
+        </div>
         <section id="infoSection">
             <h1 id="infoQuestion">Do you need help with Maths?</h1>
             <p id="siteInfo">Our website uses an interactive methodology of teaching Maths using the latest web technologies.
-                <br>Your learning experience with us is guaranteed to be intuitive and fun.<br> You will have fun while learning.
+                Your learning experience with us is guaranteed to be intuitive and fun. You will have fun while learning.
                 This is the secret of our outstanding results. Check reviews from our students.
             </p>
         </section>
@@ -86,6 +91,7 @@
                 </ol>
             </div>
             <div id="whyUsCard">
+                <h2>Why us?</h2>
                 <ul>
                     <li>Our teachers are available any time.</li>
                     <li>Available on laptop, Tablets, and Phones.</li>

@@ -1,51 +1,176 @@
-.container {
+body {
+    background: linear-gradient(forestgreen, black);
+    background-repeat: no-repeat;
+    height: 1300px;
+}
 
+.container {
+    width: 1050px;
+    height: 100px;
+    margin: 5px auto;
 }
 
 #header {
-
+    float: left;
+    font-size: 1.5rem;
+    color: forestgreen;
 }
 
 #headerInputContainer {
-
+    float: right;
+    background-color: limegreen;
+    width: 400px;
+    height: 60px;
+    margin-top: 30px;
+    margin-right: -38px;
+    border-radius: 5px;
+    background-image: linear-gradient(limegreen, lightgrey);
 }
 
 #searchInput {
-
+    margin: 20px 40px 0 20px;
+    width: 170px;
 }
 
-#searchInputButton {
+#searchTopicButton {
+    margin-left: 30px;
+}
 
+#clear {
+    float: clear;
+}
+
+#navContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 4px;
 }
 
 #nav {
+    background-color: #e7a25a;
+    display: flex;
+    box-shadow: 0 1px 10px black;
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(#e7a25a, grey);
+}
 
+#navItems {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 10px 10px;
+    text-wrap: nowrap;
+    font-size: 1rem;
+}
+
+#navItems > li {
+    text-decoration: none;
+    margin-right: 50px;
+    padding-right: 30px;
+    border-right: 1px solid black;
+    color: azure;
+    text-transform: uppercase;
+}
+
+#navItems > li > a {
+    text-decoration: none;
+    color: azure;
+    transition: font-size 0.2s ease;
+}
+
+#navItems > li:hover {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+}
+
+#navItems > li > a:hover {
+    color: lime;
+}
+
+#navItems > li:first-child {
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+#navItems > li:last-child {
+    border: none;
 }
 
 #infoSection {
-
+    width: 104%;
+    height: 250px;
+    background-color: yellowgreen;
+    margin-right: -100px;
+    border-radius: 4px;
+    background-image: linear-gradient(yellowgreen, lightgrey);
 }
 
 #infoQuestion {
-
+    font-size: 2.2rem;
+    color: forestgreen;
+    padding: 30px 0 20px 15px;
 }
 
 #siteInfo {
-
+    font-size: 1.4rem;
+    padding: 0 25px 0 25px;
 }
 
 #cards {
-
+    display: flex;
+    width: 110%;
 }
 
 #lessonsCard {
+    border: 1px solid lime;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px 260px 20px 25px;
+    color: azure;
+    list-style-type: disclosure-closed;
+}
 
+#lessonsCard > h2 {
+    font-size: 2rem;
+    color: limegreen;
+}
+
+#lessonsCard > ol > li {
+    margin: 6px 0 6px 0;
+    font-size: 1.2rem;
 }
 
 #whyUsCard {
+    border: 1px solid lime;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 20px 55px 20px 40px;
+    color: azure;
+    font-size: 1rem;
+    list-style-type: lower-alpha;
+}
 
+#whyUsCard > h2 {
+    font-size: 2rem;
+    color: limegreen;
+}
+
+#whyUsCard > ul > li {
+    margin: 20px 0 20px 0;
 }
 
 footer {
-    
+    background-color: limegreen;
+    margin: 40px 0 20px 0;
+    padding: 50px 0 50px 0;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 103.5%;
+    color: azure;
 }
