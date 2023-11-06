@@ -1,0 +1,26 @@
+{
+  "name": "gvdev-portfolio",
+  "version": "1.0.0",
+  "description": "Projects and resume of Software Developer Aaron McNeal",
+  "main": "/html/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GvDev7/Porfilio.git"
+  },
+  "author": "Aaron McNeal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GvDev7/Porfilio/issues"
+  },
+  "homepage": "https://github.com/GvDev7/Porfilio#readme",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5"
+  }
+}
