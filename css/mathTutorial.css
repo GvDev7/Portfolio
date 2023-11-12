@@ -1,50 +1,51 @@
 body {
     background: linear-gradient(forestgreen, black);
     background-repeat: no-repeat;
-    height: 1300px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 1050px;
-    height: 100px;
+    width: 85%;
     margin: 5px auto;
 }
 
+header {
+    display: flex;
+    font-size: 1.4rem;
+    color: azure;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
 #header {
-    float: left;
-    font-size: 1.5rem;
-    color: forestgreen;
+    flex: 1;
+    min-width: 300px;
 }
 
 #headerInputContainer {
-    float: right;
     background-color: limegreen;
-    width: 400px;
-    height: 60px;
-    margin-top: 30px;
-    margin-right: -38px;
     border-radius: 5px;
+    height: 70px;
     background-image: linear-gradient(limegreen, lightgrey);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 #searchInput {
-    margin: 20px 40px 0 20px;
     width: 170px;
 }
 
-#searchTopicButton {
-    margin-left: 30px;
-}
-
-#clear {
-    float: clear;
-}
-
 #navContainer {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
 }
 
@@ -52,18 +53,21 @@ body {
     background-color: #e7a25a;
     display: flex;
     box-shadow: 0 1px 10px black;
-    width: 100%;
     padding: 20px;
     background-image: linear-gradient(#e7a25a, grey);
+    flex: 1;
+    justify-content: center;
 }
 
 #navItems {
     display: flex;
     list-style-type: none;
     text-decoration: none;
-    margin: 10px 10px;
     text-wrap: nowrap;
     font-size: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #navItems > li {
@@ -100,18 +104,36 @@ body {
     border: none;
 }
 
+@media screen and (max-width: 700px) {
+
+    #navItems {
+        padding-left: 80px;
+    }
+
+    #navItems > li {
+        border-right: none;
+    }
+
+    #navItems > li:first-child {
+        padding-left: 0;
+    }
+
+    #cards {
+     flex-wrap: wrap;
+    }
+
+}
+
 #infoSection {
-    width: 104%;
-    height: 250px;
+    flex: 1;
     background-color: yellowgreen;
-    margin-right: -100px;
     border-radius: 4px;
     background-image: linear-gradient(yellowgreen, lightgrey);
 }
 
 #infoQuestion {
     font-size: 2.2rem;
-    color: forestgreen;
+    color: azure;
     padding: 30px 0 20px 15px;
 }
 
@@ -122,16 +144,18 @@ body {
 
 #cards {
     display: flex;
-    width: 110%;
+    justify-content: space-between;
 }
 
 #lessonsCard {
     border: 1px solid lime;
     border-radius: 5px;
     margin-top: 20px;
-    padding: 20px 260px 20px 25px;
+    padding: 20px 20px 20px 25px;
     color: azure;
     list-style-type: disclosure-closed;
+    flex: 40%;
+    margin-right: 10px;
 }
 
 #lessonsCard > h2 {
@@ -148,11 +172,13 @@ body {
     border: 1px solid lime;
     border-radius: 5px;
     margin-top: 20px;
-    margin-left: 100px;
-    padding: 20px 55px 20px 40px;
+    /* margin-left: 309px; */
+    padding: 20px 20px 20px 40px;
     color: azure;
     font-size: 1rem;
     list-style-type: lower-alpha;
+    flex: 40%;
+    margin-left: 10px;
 }
 
 #whyUsCard > h2 {
@@ -163,6 +189,7 @@ body {
 #whyUsCard > ul > li {
     margin: 20px 0 20px 0;
 }
+
 
 footer {
     background-color: limegreen;

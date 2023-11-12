@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: forestgreen;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px 10px 10px;
+}
+
+.column {
+    flex: 1;
+    min-width: 350px;
+}
+
+img {
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+}
