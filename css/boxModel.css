@@ -81,6 +81,10 @@ body {
     background-color: #2e22d4;
 }
 
+.container .box:nth-child(5) .details {
+    background-color: #24db4c;
+}
+
 .container .box .details .content {
     position: absolute;
     top: calc(50% - 12px);
